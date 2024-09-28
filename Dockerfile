@@ -9,7 +9,8 @@ RUN apk add --no-cache \
     python3 \
     py3-pip \
     nodejs \
-    npm
+    npm \
+    bash
 
 # Set up a directory for QEMU images
 RUN mkdir -p /qemu/images
