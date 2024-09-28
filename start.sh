@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start QEMU in the background
-qemu-system-x86_64 -m 1024 -boot d -cdrom /qemu/images/linux \
+qemu-system-x86_64 -m 256 -boot d -cdrom /qemu/images/linux \
     #-drive file=/qemu/images/disk.qcow2,format=qcow2 -vnc :0 &
 
 # Start noVNC
