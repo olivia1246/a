@@ -19,7 +19,7 @@ RUN mkdir -p /qemu/images
 # RUN wget -O /qemu/images/linux.iso \
 #     https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-standard-3.20.3-x86_64.iso
 RUN wget -O /qemu/images/hirensbootcd.zip \
-     https://https://mirror.clientvps.com/hbcd/Hirens.BootCD.15.2.zip
+     https://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip
 RUN unzip /qemu/images/hirensbootcd.zip -d /qemu/images/
 RUN mv "/qemu/images/Hiren's.BootCD.15.2.iso" "/qemu/images/hirensbootcd.iso"
 
