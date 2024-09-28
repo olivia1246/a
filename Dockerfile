@@ -21,6 +21,7 @@ RUN mkdir -p /qemu/images
 RUN wget -O /qemu/images/hirensbootcd.zip \
      https://www.hirensbootcd.org/files/Hirens.BootCD.15.2.zip
 RUN unzip /qemu/images/hirensbootcd.zip -d /qemu/images/
+RUN mv "/qemu/images/Hiren's.BootCD.15.2.iso" "/qemu/images/hirensbootcd.iso"
 
 # Create a QEMU disk image
 # RUN qemu-img create -f qcow2 /qemu/images/disk.qcow2 10G
