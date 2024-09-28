@@ -16,7 +16,7 @@ RUN mkdir -p /qemu/images
 
 # Download a disk file for testing (you can replace this with your preferred image)
 RUN wget -O /qemu/images/linux.iso \
-    https://i.copy.sh/linux.iso
+    https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-standard-3.20.3-x86_64.iso
 
 # Create a QEMU disk image
 # RUN qemu-img create -f qcow2 /qemu/images/disk.qcow2 10G
