@@ -16,8 +16,11 @@ RUN apk add --no-cache \
 RUN mkdir -p /qemu/images
 
 # Download a disk file for testing (you can replace this with your preferred image)
-RUN wget -O /qemu/images/linux.iso \
-    https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-standard-3.20.3-x86_64.iso
+# RUN wget -O /qemu/images/linux.iso \
+#     https://dl-cdn.alpinelinux.org/alpine/v3.20/releases/x86_64/alpine-standard-3.20.3-x86_64.iso
+RUN wget -O /qemu/images/hirensbootcd.zip \
+     https://https://mirror.clientvps.com/hbcd/Hirens.BootCD.15.2.zip
+RUN unzip /qemu/images/hirensbootcd.zip -d /qemu/images/
 
 # Create a QEMU disk image
 # RUN qemu-img create -f qcow2 /qemu/images/disk.qcow2 10G
