@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start QEMU in the background
-qemu-system-x86_64 -m 256 -boot d -cdrom "/qemu/images/Hirens.BootCD.15.2.iso" -device qxl -cpu host -accel kvm -M pc -netdev user,id=lan -device rtl8139,netdev=lan -usb -device usb-tablet -rtc base=localtime -monitor stdio -vnc :0 &
+qemu-system-x86_64 -m 256 -boot d -cdrom /qemu/images/hirensbootcd.iso -device qxl -cpu host -accel kvm -M pc -netdev user,id=lan -device rtl8139,netdev=lan -usb -device usb-tablet -rtc base=localtime -monitor stdio -vnc :0 &
 # -drive file=/qemu/images/disk.qcow2,format=qcow2
 
 # Start noVNC
